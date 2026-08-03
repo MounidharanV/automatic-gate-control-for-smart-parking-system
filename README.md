@@ -13,7 +13,7 @@
 
 ## Circuit Diagram
 
-![Circuit](assets/screenshots/circuit.png)
+![Circuit](circuit _diagram.png)
 
 ---
 
