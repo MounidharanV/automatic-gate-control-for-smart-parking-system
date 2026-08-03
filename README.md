@@ -3,7 +3,23 @@
 ![Language](https://img.shields.io/badge/Language-Arduino%20C-green?style=for-the-badge)
 ![Sensors](https://img.shields.io/badge/Sensor-HC--SR04-orange?style=for-the-badge)
 ![Servo](https://img.shields.io/badge/Servo-SG90-red?style=for-the-badge)
+# 📸 Project Preview
 
+## Hardware Setup
+
+![Hardware](assets/screenshots/hardware-setup.png)
+
+---
+
+## Circuit Diagram
+
+![Circuit](assets/screenshots/circuit.png)
+
+---
+
+## Serial Monitor Output
+
+![Output](assets/screenshots/output.png)
 ## Using Circular Queue and Min Heap
 
 This project presents an **Automated Smart Parking System** designed to improve parking management by automating **vehicle entry**, **parking slot allocation**, and **gate control** using embedded systems and efficient data structures.
