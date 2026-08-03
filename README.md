@@ -1,4 +1,8 @@
 # 🚗 Automatic Gate Control for Smart Parking System
+![Arduino](https://img.shields.io/badge/Arduino-UNO-blue?style=for-the-badge&logo=arduino)
+![Language](https://img.shields.io/badge/Language-Arduino%20C-green?style=for-the-badge)
+![Sensors](https://img.shields.io/badge/Sensor-HC--SR04-orange?style=for-the-badge)
+![Servo](https://img.shields.io/badge/Servo-SG90-red?style=for-the-badge)
 
 ## Using Circular Queue and Min Heap
 
