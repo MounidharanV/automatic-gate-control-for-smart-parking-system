@@ -19,7 +19,10 @@
 
 ## Serial Monitor Output
 
-![Output](assets/screenshots/output.png)
+![Output](Serial-Monitor-Output/BOTH-SLOTS-ARE-AVAILABLE-TO-OCCUPY.jpg)
+
+---
+
 ## Using Circular Queue and Min Heap
 
 This project presents an **Automated Smart Parking System** designed to improve parking management by automating **vehicle entry**, **parking slot allocation**, and **gate control** using embedded systems and efficient data structures.
