@@ -1,38 +1,31 @@
-# 🚗 Automatic Gate Control for Smart Parking System
+# 🚗 Automatic Gate Control for Smart Parking System using Circular Queue and Min Heap
+
 ![Arduino](https://img.shields.io/badge/Arduino-UNO-blue?style=for-the-badge&logo=arduino)
 ![Language](https://img.shields.io/badge/Language-Arduino%20C-green?style=for-the-badge)
 ![Sensors](https://img.shields.io/badge/Sensor-HC--SR04-orange?style=for-the-badge)
 ![Servo](https://img.shields.io/badge/Servo-SG90-red?style=for-the-badge)
-# 📸 Project Preview
 
-## Hardware Setup
-
-![Hardware](Hardware-setup/Circuit-Setup/HARDWARE-SETUP-WITHOUT-CARS-IN-THE-PARKING-SLOT.jpg)
+A smart embedded parking management system that automates **vehicle entry**, **parking slot allocation**, and **gate control** using **Arduino UNO**, **HC-SR04 Ultrasonic Sensors**, and an **SG90 Servo Motor**. The system utilizes a **Circular Queue** for FIFO vehicle management and a **Min Heap** to efficiently allocate the nearest available parking slot.
 
 ---
 
-## Circuit Diagram
+# 📑 Table of Contents
 
-![Circuit](assets/screenshots/circuit.png)
-
----
-
-## Serial Monitor Output
-
-![Output](Serial-Monitor-Output/BOTH-SLOTS-ARE-AVAILABLE-TO-OCCUPY.jpg)
-
----
-
-## Using Circular Queue and Min Heap
-
-This project presents an **Automated Smart Parking System** designed to improve parking management by automating **vehicle entry**, **parking slot allocation**, and **gate control** using embedded systems and efficient data structures.
-
-The system is built using **Arduino UNO**, **HC-SR04 Ultrasonic Sensors**, and a **Servo Motor** to create a real-time smart parking solution.
-
-To improve efficiency:
-
-- **Circular Queue** is used for managing vehicle entry in FIFO order
-- **Min Heap** is used to allocate the nearest available parking slot
+- Project Objectives
+- Project Preview
+- System Overview
+- Tech Stack
+- Data Structures Used
+- Hardware Connections
+- Hardware Components
+- Software Requirements
+- Project Structure
+- Working Principle
+- Features
+- Applications
+- Future Enhancements
+- Team Members
+- License
 
 ---
 
@@ -43,34 +36,65 @@ To improve efficiency:
 - Detect vehicle entry using ultrasonic sensors
 - Allocate the nearest available parking slot efficiently
 - Manage vehicle flow using FIFO logic
-- Display real-time parking status through Serial Monitor
+- Display real-time parking status through the Arduino Serial Monitor
+
+---
+
+# 📸 Project Preview
+
+## Hardware Setup
+
+![Hardware Setup](Hardware-setup/Circuit-Setup/HARDWARE-SETUP-WITHOUT-CARS-IN-THE-PARKING-SLOT.jpg)
+
+---
+
+## Circuit Diagram
+
+![Circuit Diagram](https://github.com/MounidharanV/automatic-gate-control-for-smart-parking-system/blob/main/circuit%20_diagram.png?raw=true)
+
+---
+
+## Serial Monitor Output
+
+![Serial Monitor](Serial-Monitor-Output/BOTH-SLOTS-ARE-AVAILABLE-TO-OCCUPY.jpg)
 
 ---
 
 # ⚙️ System Overview
 
-## 🔹 Vehicle Detection
+### 🚘 Vehicle Detection
 
-Ultrasonic sensors detect vehicles approaching the entry gate and monitor parking slot occupancy.
+HC-SR04 ultrasonic sensors detect vehicles approaching the entrance gate and continuously monitor parking slot occupancy.
 
-## 🔹 Vehicle Queue Management
+### 🚦 Vehicle Queue Management
 
-Incoming vehicles are managed using a **Circular Queue**, ensuring vehicles enter in **First-In-First-Out (FIFO)** order.
+Incoming vehicles are maintained using a **Circular Queue**, ensuring **First-In-First-Out (FIFO)** processing.
 
-## 🔹 Smart Slot Allocation
+### 🅿️ Smart Slot Allocation
 
-Available parking slots are maintained using a **Min Heap** to assign the nearest available slot efficiently.
+A **Min Heap** maintains the available parking slots and allocates the nearest free slot.
 
-## 🔹 Automated Gate Control
+### 🚪 Automatic Gate Control
 
-A **Servo Motor** acts as the parking gate:
+The SG90 Servo Motor controls the parking gate.
 
-- Opens when parking is available
-- Remains closed when all slots are occupied
+- Opens when parking is available.
+- Remains closed when all slots are occupied.
 
-## 🔹 Real-Time Monitoring
+### 📟 Real-Time Monitoring
 
-The system continuously updates parking slot status and displays results through the **Arduino Serial Monitor**.
+The Arduino continuously updates parking slot status through the **Serial Monitor**.
+
+---
+
+# 💻 Tech Stack
+
+- Arduino UNO
+- Arduino IDE
+- Arduino C / Embedded C
+- HC-SR04 Ultrasonic Sensors
+- SG90 Servo Motor
+- Serial Monitor
 
 ---
 
@@ -80,25 +104,45 @@ The system continuously updates parking slot status and displays results through
 
 Used for:
 
-- Managing vehicle entry order
-- Ensuring FIFO-based vehicle handling
-- Preventing queue overflow efficiently
+- FIFO vehicle management
+- Managing waiting vehicles
+- Preventing queue overflow
 
 ## Min Heap
 
 Used for:
 
-- Finding the nearest available parking slot
-- Optimizing parking allocation time
-- Improving system efficiency
+- Efficient nearest-slot allocation
+- Fast retrieval of available parking slots
+- Optimized parking management
 
 ---
 
-# 🛠️ Hardware Components
+# 🔌 Hardware Connections
+
+| Component | Arduino Pin |
+|-----------|------------:|
+| Entry Sensor TRIG | D2 |
+| Entry Sensor ECHO | D3 |
+| Slot 1 Sensor TRIG | D4 |
+| Slot 1 Sensor ECHO | D5 |
+| Slot 2 Sensor TRIG | D6 |
+| Slot 2 Sensor ECHO | D7 |
+| Slot 3 Sensor TRIG | D8 |
+| Slot 3 Sensor ECHO | D9 |
+| Servo Motor Signal | D10 |
+| VCC | 5V |
+| GND | GND |
+
+> **Note:** Update the pin numbers if your implementation uses different Arduino pins.
+
+---
+
+# 🛠 Hardware Components
 
 - Arduino UNO
 - HC-SR04 Ultrasonic Sensors
-- Servo Motor (SG90)
+- SG90 Servo Motor
 - Breadboard
 - Jumper Wires
 - USB Cable
@@ -108,17 +152,19 @@ Used for:
 # 💻 Software Requirements
 
 - Arduino IDE
-- Embedded C / Arduino Programming Language
+- Arduino C / Embedded C
 
 ---
 
-# 📂 Project Directory Structure
+# 📂 Project Structure
 
 ```text
 automatic-gate-control-for-smart-parking-system/
 │
+├── assets/
+│   └── circuit_diagram.png
+│
 ├── Code/
-│   └── Arduino Source Code
 │
 ├── Hardware-setup/
 │   ├── Circuit-Setup/
@@ -126,68 +172,73 @@ automatic-gate-control-for-smart-parking-system/
 │
 ├── Serial-Monitor-Output/
 │
-└── README.md
+├── README.md
+│
+└── LICENSE
 ```
 
 ---
 
-# 🚀 Working Process
+# 🔄 Working Principle
 
-1. Vehicle arrives at the entry gate
-2. Ultrasonic sensor detects the vehicle
-3. System checks parking slot availability
-4. Vehicle is added to the Circular Queue
-5. Nearest available slot is assigned using Min Heap
-6. Servo motor opens the gate
-7. Slot occupancy status is updated in real time
-8. Serial Monitor displays the current parking information
-
----
-
-# 📸 Project Modules
-
-## Code
-
-Contains the Arduino source code implementing:
-
-- Ultrasonic sensor control
-- Servo motor operation
-- Circular Queue logic
-- Min Heap logic
-- Serial Monitor output
-
-## Hardware Setup
-
-Contains:
-
-- Circuit setup images
-- Hardware component images
-- Physical implementation details
-
-## Serial Monitor Output
-
-Contains screenshots showing:
-
-- Slot availability status
-- Occupied/free parking conditions
-- Real-time monitoring output
+1. Vehicle approaches the entrance gate.
+2. Entry ultrasonic sensor detects the vehicle.
+3. System checks parking slot availability.
+4. Vehicle is added to the Circular Queue.
+5. Min Heap identifies the nearest available parking slot.
+6. Servo motor opens the gate.
+7. Vehicle parks in the allocated slot.
+8. Slot occupancy is updated.
+9. Current parking status is displayed on the Serial Monitor.
 
 ---
 
 # 🎯 Features
 
-- Automated parking gate control
+- Automatic gate control
 - Smart nearest-slot allocation
-- Real-time occupancy monitoring
-- Efficient vehicle queue management
-- Low-cost embedded system implementation
-- Scalable smart parking concept
+- FIFO vehicle management
+- Real-time parking occupancy monitoring
+- Efficient parking slot allocation using Min Heap
+- Low-cost embedded implementation
+- Scalable parking management solution
+
+---
+
+# 📌 Applications
+
+- Smart Parking Systems
+- Shopping Malls
+- Hospitals
+- Educational Institutions
+- Residential Apartments
+- Smart City Infrastructure
+
+---
+
+# 🔮 Future Enhancements
+
+- RFID-based vehicle authentication
+- Mobile application integration
+- Cloud-based parking monitoring
+- Automatic payment system
+- Number plate recognition
+- IoT-based remote monitoring
 
 ---
 
 # 👨‍💻 Team Members
-- Mounidharan V
-- Guna S
-- Thirulogasundar S
+
+- **Mounidharan V**
+- **Guna S**
+- **Thirulogasundar S**
 
 ---
+
+# 📜 License
+
+This project was developed for **academic and educational purposes**.
+
+---
+
+⭐ **If you found this project useful, consider giving it a ⭐ on GitHub!**
