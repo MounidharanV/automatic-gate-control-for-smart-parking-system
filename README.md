@@ -3,25 +3,7 @@
 ![Language](https://img.shields.io/badge/Language-Arduino%20C-green?style=for-the-badge)
 ![Sensors](https://img.shields.io/badge/Sensor-HC--SR04-orange?style=for-the-badge)
 ![Servo](https://img.shields.io/badge/Servo-SG90-red?style=for-the-badge)
-# 📸 Project Preview
 
-## Hardware Setup
-
-![Hardware](Hardware-setup/Circuit-Setup/HARDWARE-SETUP-WITHOUT-CARS-IN-THE-PARKING-SLOT.jpg)
-
----
-
-## Circuit Diagram
-
-![Circuit](https://github.com/MounidharanV/automatic-gate-control-for-smart-parking-system/blob/main/circuit%20_diagram.png?raw=true)
-
----
-
-## Serial Monitor Output
-
-![Output](Serial-Monitor-Output/BOTH-SLOTS-ARE-AVAILABLE-TO-OCCUPY.jpg)
-
----
 
 ## Using Circular Queue and Min Heap
 
@@ -44,6 +26,25 @@ To improve efficiency:
 - Allocate the nearest available parking slot efficiently
 - Manage vehicle flow using FIFO logic
 - Display real-time parking status through Serial Monitor
+
+---
+# 📸 Project Preview
+
+## Hardware Setup
+
+![Hardware](Hardware-setup/Circuit-Setup/HARDWARE-SETUP-WITHOUT-CARS-IN-THE-PARKING-SLOT.jpg)
+
+---
+
+## Circuit Diagram
+
+![Circuit](https://github.com/MounidharanV/automatic-gate-control-for-smart-parking-system/blob/main/circuit%20_diagram.png?raw=true)
+
+---
+
+## Serial Monitor Output
+
+![Output](Serial-Monitor-Output/BOTH-SLOTS-ARE-AVAILABLE-TO-OCCUPY.jpg)
 
 ---
 
@@ -73,6 +74,13 @@ A **Servo Motor** acts as the parking gate:
 The system continuously updates parking slot status and displays results through the **Arduino Serial Monitor**.
 
 ---
+# 💻 Tech Stack
+
+- Arduino UNO
+- Arduino IDE
+- Embedded C
+- HC-SR04 Ultrasonic Sensors
+- Servo Motor (SG90)
 
 # 🧠 Data Structures Used
 
