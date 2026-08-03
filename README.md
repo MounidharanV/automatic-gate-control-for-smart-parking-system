@@ -161,20 +161,26 @@ Used for:
 ```text
 automatic-gate-control-for-smart-parking-system/
 │
-├── assets/
-│   └── circuit_diagram.png
+├── 📁 assets
+│   ├── hardware-setup.jpg
+│   ├── circuit-diagram.png
+│   ├── serial-monitor-1.jpg
+│   ├── serial-monitor-2.jpg
+│   └── serial-monitor-3.jpg
+|
+├── 📁 code
+│   └── smart_parking.ino
 │
-├── Code/
+├── 📁 docs
+│   ├── Project_Report.pdf
+│   └── Project_Presentation.pdf
 │
-├── Hardware-setup/
-│   ├── Circuit-Setup/
-│   └── Components-Used/
-│
-├── Serial-Monitor-Output/
+├── 📁 hardware
+│   └── components-used
 │
 ├── README.md
-│
-└── LICENSE
+├── LICENSE
+└── .gitignore
 ```
 
 ---
