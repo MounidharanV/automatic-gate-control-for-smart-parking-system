@@ -13,7 +13,7 @@
 
 ## Circuit Diagram
 
-![Circuit](circuit _diagram.png)
+![Circuit](https://github.com/MounidharanV/automatic-gate-control-for-smart-parking-system/blob/main/circuit%20_diagram.png?raw=true)
 
 ---
 
