@@ -7,7 +7,7 @@
 
 ## Hardware Setup
 
-![Hardware](assets/screenshots/hardware-setup.png)
+![Hardware](Hardware-setup/Circuit-Setup/HARDWARE-SETUP-WITHOUT-CARS-IN-THE-PARKING-SLOT.jpg)
 
 ---
 
