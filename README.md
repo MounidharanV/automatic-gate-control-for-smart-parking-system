@@ -44,13 +44,13 @@ A smart embedded parking management system that automates **vehicle entry**, **p
 
 ## Hardware Setup
 
-![Hardware Setup](assets/Hardware setup.jpg)
+![Hardware Setup](https://github.com/MounidharanV/automatic-gate-control-for-smart-parking-system/blob/main/assets/Hardware%20setup.jpg?raw=true)
 
 ---
 
 ## Circuit Diagram
 
-![Circuit Diagram](assets/circuit _diagram.png)
+![Circuit Diagram](https://github.com/MounidharanV/automatic-gate-control-for-smart-parking-system/blob/main/assets/circuit%20_diagram.png?raw=true)
 
 ---
 
